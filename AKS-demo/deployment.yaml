@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-container
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp-container
+  template:
+    metadata:
+      labels:
+        app: myapp-container
+    spec:
+      containers:
+      - name: myapp-container
+        image: RandomPredictRegistry.azurecr.io/aksdemo:latest  # Adjust the image path/tag appropriately
+        ports:
+        - containerPort: 8000  # Adjust the container port based on your application needs

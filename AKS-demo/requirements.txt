@@ -1,0 +1,8 @@
+fastapi==0.114.0
+importlib-resources==6.4.0
+jaraco.text==3.12.1
+ordered-set==4.1.0
+packaging==24.1
+platformdirs==4.2.2
+tomli==2.0.1
+uvicorn==0.30.6
